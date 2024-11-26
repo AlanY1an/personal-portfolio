@@ -88,7 +88,7 @@ export const projectsData = [
     tags: ["Django", "Python", "SQLite", "PostgreSQL"],
     imageUrl: project3Img, // Replace with your image variable
     source: "https://github.com/AlanY1an/Restaurant-Manage-System", // Replace with the actual link if available
-    demo: "https://yian.pythonanywhere.com/", // Replace with the actual demo link if available
+    demo: "https://yian01.pythonanywhere.com/", // Replace with the actual demo link if available
   },
 ] as const;
 
