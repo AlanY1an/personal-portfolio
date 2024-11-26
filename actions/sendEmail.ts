@@ -5,7 +5,6 @@ import { Resend } from "resend";
 import { validateString, getErrorMessage } from "@/lib/utils";
 import ContactFormEmail from "@/email/contact-form-email";
 
-
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 export const sendEmail = async (formData: FormData) => {
@@ -37,7 +36,6 @@ export const sendEmail = async (formData: FormData) => {
       }),
     });
   } catch (error: unknown) {
-    console.error("Error from Resend API:", error);
     return {
       error: getErrorMessage(error),
     };
