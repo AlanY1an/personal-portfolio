@@ -2,9 +2,10 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+
+import project1Img from "@/public/project1.jpg";
+import project2Img from "@/public/project2.jpg";
+import project3Img from "@/public/project3.jpg";
 
 export const links = [
   {
@@ -35,88 +36,82 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Applied Mathematics, Minor in CS (Transferred)",
+    location: "Baylor University, Waco, TX",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "Recognized on the Dean's List and contributed as a Minister in the Chinese Students and Scholars Association.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "Aug 2020 - May 2022",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "B.S. in Applied Mathematics",
+    location: "University of Texas at Austin, Austin, TX",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+      "Graduated with a 3.9 GPA. Relevant coursework includes Object-Oriented Programming, Discrete Math, and Real Analysis.",
+    icon: React.createElement(LuGraduationCap),
+    date: "Sep 2022 - May 2024",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "M.S. in Software Engineering Systems",
+    location: "Northeastern University, Boston, MA",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+      "Currently pursuing a master's degree with a focus on Software development. Expected graduation in May 2026.",
+    icon: React.createElement(LuGraduationCap),
+    date: "Sep 2024 - Expected May 2026",
   },
 ] as const;
+
+
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Portfolio Template",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma","Python"],
-    imageUrl: corpcommentImg,
-    source: "https://github.com/",
-    demo: "https://google.com/",
+      "A reusable and scalable portfolio template using Next.js",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    imageUrl: project1Img, // Replace with your image variable
+    source: "https://github.com/AlanY1an/personal-portfolio", // Replace with the actual link if available
+    demo: "https://your-demo-link.com", // Replace with the actual demo link if available
   },
   {
-    title: "rmtDev",
+    title: "Online Flower Shop",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
-    source: "",
-    demo: "",
+      "A responsive SPA for an online flower shop built with React.js and Vite, focusing on performance optimization and accessibility.",
+    tags: ["React.js", "Vite", "HTML", "CSS", "JavaScript"],
+    imageUrl: project2Img, // Replace with your image variable
+    source: "https://github.com/AlanY1an/BloomGraceWeb", // Replace with the actual link if available
+    demo: "https://bloom-grace-web.vercel.app/", // Replace with the actual demo link if available
   },
   {
-    title: "Word Analytics",
+    title: "Restaurant Management System",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
-    source: "",
-    demo: "",
-  },
-  {
-    title: "Testing",
-    description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
-    source: "",
-    demo: "",
+      "A full-stack Django-based restaurant management system featuring table reservations, meal ordering, and an integrated blog.",
+    tags: ["Django", "Python", "SQLite", "PostgreSQL"],
+    imageUrl: project3Img, // Replace with your image variable
+    source: "https://github.com/AlanY1an/Restaurant-Manage-System", // Replace with the actual link if available
+    demo: "https://yian.pythonanywhere.com/", // Replace with the actual demo link if available
   },
 ] as const;
 
+
 export const skillsData = [
+  "Python",
+  "Java",
+  "C++",
   "HTML",
   "CSS",
   "JavaScript",
-  "TypeScript",
   "React",
-  "Next.js",
-  "Node.js",
-  "Git",
-  "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
-  "PostgreSQL",
-  "Python",
+  "JavaFX",
+  "Spring Boot",
   "Django",
-  "Framer Motion",
+  "SQL",
+  "MATLAB",
+  "R",
+  "MySQL",
+  "Git",
+  "Linux",
+  "BeautifulSoup",
+  "Requests",
+  "LATEX",
 ] as const;
