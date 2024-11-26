@@ -1,6 +1,7 @@
 import React from "react";
-
-
+import { CgWorkAlt } from "react-icons/cg";
+import { FaReact } from "react-icons/fa";
+import { LuGraduationCap } from "react-icons/lu";
 import project1Img from "@/public/project1.jpg";
 import project2Img from "@/public/project2.jpg";
 import project3Img from "@/public/project3.jpg";
