@@ -20,7 +20,7 @@ export default function About() {
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
         My name is <span className="font-medium">Yian Ge</span>, and I am a dedicated 
-        <span className="font-medium">software engineer</span> specializing in designing and 
+        <span className="font-medium"> software engineer</span> specializing in designing and 
         developing <span className="italic">efficient and scalable software solutions</span>. 
         I bring strong technical expertise in programming languages such as{" "}
         <span className="font-medium">Java, Python, SQL, and MATLAB</span>, and I have hands-on 
@@ -34,7 +34,7 @@ export default function About() {
 
 
       <p className="mb-3">
-        I hold a <span className="font-medium">Bachelor of Science in Applied Mathematics</span> 
+        I hold a <span className="font-medium">Bachelor of Science in Applied Mathematics </span> 
         from the <span className="font-medium">University of Texas at Austin</span> and am currently 
         pursuing a <span className="font-medium">Master of Science in Software Engineering Systems</span> 
         at <span className="font-medium">Northeastern University</span>. This academic journey reflects 
