@@ -5,7 +5,7 @@ import { LuGraduationCap } from "react-icons/lu";
 import project1Img from "@/public/project1.jpg";
 import project2Img from "@/public/project2.jpg";
 import project3Img from "@/public/project3.jpg";
-import project4Img from "@/public/project4.jpg";
+import project4Img from "@/public/project4.png";
 
 export const links = [
   {
