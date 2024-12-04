@@ -17,7 +17,8 @@ export default function Projects() {
     >
       <SectionHeading>My Projects</SectionHeading>
       <div>
-        {projectsData.slice(0,3).map((project,index)=>(
+        {/* can change how many project will be present here */}
+        {projectsData.slice(0,5).map((project,index)=>(
             <React.Fragment key={index}>
               <Project {...project}/>
             </React.Fragment>

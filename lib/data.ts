@@ -5,6 +5,7 @@ import { LuGraduationCap } from "react-icons/lu";
 import project1Img from "@/public/project1.jpg";
 import project2Img from "@/public/project2.jpg";
 import project3Img from "@/public/project3.jpg";
+import project4Img from "@/public/project4.jpg";
 
 export const links = [
   {
@@ -63,6 +64,15 @@ export const experiencesData = [
 
 
 export const projectsData = [
+  {
+    title: "AgendaPro Desktop App",
+    description:
+      "A productivity desktop app built with JavaFX, showcasing task, event management, and utilities like timers.",
+    tags: ["JavaFX","Scene Builder", "Java", "API"],
+    imageUrl: project4Img, // Replace with your image variable
+    source: "https://github.com/AlanY1an/AgendaPro", // Replace with the actual link if available
+    demo: "https://github.com/AlanY1an/AgendaPro", // Replace with the actual demo link if available
+  },  
   {
     title: "Portfolio Template",
     description:
