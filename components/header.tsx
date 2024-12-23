@@ -45,7 +45,8 @@ export default function Header() {
                 {/* Conditional Render */}
                 {link.name === activeSection && (
                   <motion.span
-                    className="bg-gray-100 rounded-full absolute inset-0 -z-10 dark:bg-gray-800"
+                    className="bg-gray-200 rounded-full absolute inset-0 -z-10 dark:bg-gray-800"
+                    // This is the ID 
                     layoutId="activeSection" 
                     // The elements with same layoutId motion will catch and animate accordingly
                     transition={{

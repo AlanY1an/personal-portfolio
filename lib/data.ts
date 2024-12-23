@@ -61,22 +61,19 @@ export const experiencesData = [
   },
 ] as const;
 
-
-
 export const projectsData = [
   {
     title: "AgendaPro Desktop App",
     description:
       "A productivity desktop app built with JavaFX, showcasing task, event management, and utilities like timers.",
-    tags: ["JavaFX","Scene Builder", "Java", "API"],
+    tags: ["JavaFX", "Scene Builder", "Java", "API"],
     imageUrl: project4Img, // Replace with your image variable
     source: "https://github.com/AlanY1an/AgendaPro", // Replace with the actual link if available
     demo: "https://github.com/AlanY1an/AgendaPro", // Replace with the actual demo link if available
-  },  
+  },
   {
     title: "Portfolio Template",
-    description:
-      "A reusable and scalable portfolio template using Next.js",
+    description: "A reusable and scalable portfolio template using Next.js",
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
     imageUrl: project1Img, // Replace with your image variable
     source: "https://github.com/AlanY1an/personal-portfolio", // Replace with the actual link if available
@@ -102,7 +99,6 @@ export const projectsData = [
   },
 ] as const;
 
-
 export const skillsData = [
   "Python",
   "Java",
@@ -111,9 +107,11 @@ export const skillsData = [
   "CSS",
   "JavaScript",
   "React",
-  "JavaFX",
+  "Next.js",
+  "Node.js",
   "Spring Boot",
   "Django",
+  "POSTMAN",
   "SQL",
   "MATLAB",
   "R",
@@ -122,5 +120,6 @@ export const skillsData = [
   "Linux",
   "BeautifulSoup",
   "Requests",
+  "JavaFX",
   "LATEX",
 ] as const;
