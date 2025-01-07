@@ -36,14 +36,6 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Applied Mathematics, Minor in CS (Transferred)",
-    location: "Baylor University, Waco, TX",
-    description:
-      "Recognized on the Dean's List and contributed as a Minister in the Chinese Students and Scholars Association.",
-    icon: React.createElement(LuGraduationCap),
-    date: "Aug 2020 - May 2022",
-  },
-  {
     title: "B.S. in Applied Mathematics",
     location: "University of Texas at Austin, Austin, TX",
     description:
@@ -58,6 +50,14 @@ export const experiencesData = [
       "Currently pursuing a master's degree with a focus on Software development. Expected graduation in May 2026.",
     icon: React.createElement(LuGraduationCap),
     date: "Sep 2024 - Expected May 2026",
+  },
+  {
+    title: "Website Developer Intern at BeTogether Hub",
+    location: "Remote",
+    description:
+      "Developed a fully functional WordPress website from Figma designs, optimized performance to reduce page load time by 30%, managed blog and podcast pages with custom themes and plugins, and created comprehensive documentation for administrators.",
+    icon: React.createElement(CgWorkAlt),
+    date: "Dec 2024 - Present",
   },
 ] as const;
 
