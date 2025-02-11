@@ -6,6 +6,7 @@ import project1Img from "@/public/project1.jpg";
 import project2Img from "@/public/project2.jpg";
 import project3Img from "@/public/project3.jpg";
 import project4Img from "@/public/project4.jpg";
+import project5Img from "@/public/project5.png";
 
 export const links = [
   {
@@ -59,9 +60,27 @@ export const experiencesData = [
     icon: React.createElement(CgWorkAlt),
     date: "Dec 2024 - Present",
   },
+  {
+    title:
+      "Graduate Research Assistant at Global Resilience InstituteNortheastern University",
+    location: "Boston, MA",
+    description:
+      "Conduct research for the Defense Industrial Base Initiative (DIBI) on U.S. defense manufacturing, supply chains, and workforce readiness. Assist with case studies, stakeholder engagement, and policy analysis to enhance industrial resilience.",
+    icon: React.createElement(CgWorkAlt),
+    date: "Dec 2024 - Present",
+  },
 ] as const;
 
 export const projectsData = [
+  {
+    title: "Spotify Lyrics Enhancer Chrome Extension",
+    description:
+      "A Chrome extension that integrates with the Genius API translates them into multiple languages",
+    tags: ["Chrome Extension", "Genius API", "JavaScript"],
+    imageUrl: project5Img, // Replace with your image variable
+    source: "https://github.com/AlanY1an/SpotifyTranslate",
+    demo: "https://github.com/AlanY1an/SpotifyTranslate",
+  },
   {
     title: "AgendaPro Desktop App",
     description:
