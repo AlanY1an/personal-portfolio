@@ -96,7 +96,7 @@ export const projectsData = [
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
     imageUrl: project1Img, // Replace with your image variable
     source: "https://github.com/AlanY1an/personal-portfolio", // Replace with the actual link if available
-    demo: "https://your-demo-link.com", // Replace with the actual demo link if available
+    demo: "https://whyian.dev/", // Replace with the actual demo link if available
   },
   {
     title: "Online Flower Shop",
@@ -105,7 +105,7 @@ export const projectsData = [
     tags: ["React.js", "Vite", "HTML", "CSS", "JavaScript"],
     imageUrl: project2Img, // Replace with your image variable
     source: "https://github.com/AlanY1an/BloomGraceWeb", // Replace with the actual link if available
-    demo: "https://bloom-grace-web.vercel.app/", // Replace with the actual demo link if available
+    demo: "https://yian.pythonanywhere.com/", // Replace with the actual demo link if available
   },
   {
     title: "Restaurant Management System",

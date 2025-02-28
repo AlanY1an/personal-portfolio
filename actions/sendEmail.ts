@@ -19,7 +19,7 @@ export const sendEmail = async (formData: FormData) => {
   }
   if (!validateString(message, 5000)) {
     return {
-      error: "Invalid message",
+      error: "Invalid message: message is too long ( <5000 characters )",
     };
   }
 
@@ -27,7 +27,7 @@ export const sendEmail = async (formData: FormData) => {
   try {
     data = await resend.emails.send({
       from: "Contact Form <onboarding@resend.dev>",
-      to: "an1154811577@gmail.com",
+      to: "yiange131@gmail.com",
       subject: "You get a new message from portfolio",
       replyTo: senderEmail,
       react: React.createElement(ContactFormEmail, {
@@ -35,6 +35,14 @@ export const sendEmail = async (formData: FormData) => {
         senderEmail: senderEmail as string,
       }),
     });
+    if (data?.error) {
+      return {
+        error:
+          typeof data.error === "object" && "message" in data.error
+            ? data.error.message
+            : data.error,
+      };
+    }
   } catch (error: unknown) {
     return {
       error: getErrorMessage(error),
