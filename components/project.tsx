@@ -16,7 +16,6 @@ export default function Project({
   source,
   demo,
 }: ProjectProps) {
-
   const ref = useRef<HTMLDivElement>(null);
 
   const { scrollYProgress } = useScroll({
@@ -37,12 +36,11 @@ export default function Project({
       className="group mb-3 sm:mb-8 last:mb-0"
     >
       <section className="bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[22rem] hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
-        
         <Image
-            src={imageUrl}
-            alt="Project I worked on"
-            quality={95}
-              className="block h-[20rem] object-cover object-top top-0 p-4 relative right-0 m-auto sm:p-0 sm:absolute sm:-right-40 sm:top-10 w-[28.25rem] rounded-t-lg shadow-2xl
+          src={imageUrl}
+          alt="Project I worked on"
+          quality={95}
+          className="block h-[20rem] object-cover object-top top-0 p-4 relative right-0 m-auto sm:p-0 sm:absolute sm:-right-40 sm:top-10 w-[28.25rem] rounded-t-lg shadow-2xl
               transition 
               
               sm:group-hover:scale-[1.04]
@@ -56,9 +54,11 @@ export default function Project({
 
               sm:group-even:right-[initial] group-even:left-0 sm:group-even:-left-40"
         />
-        
+
         <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem] ">
-          <h3 className="text-2xl font-semibold text-center sm:text-start">{title}</h3>
+          <h3 className="text-2xl font-semibold text-center sm:text-start">
+            {title}
+          </h3>
           <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
             {description}
           </p>
@@ -81,7 +81,8 @@ export default function Project({
                 rel="noopener noreferrer"
                 className="flex items-center hover:underline font-medium whitespace-nowrap"
               >
-                <FaGithub className="mr-2"/>Source
+                <FaGithub className="mr-2" />
+                Source
               </a>
             )}
             {demo && (
@@ -91,15 +92,12 @@ export default function Project({
                 rel="noopener noreferrer"
                 className="flex items-center hover:underline font-medium whitespace-nowrap"
               >
-                <FaExternalLinkAlt className="mr-2"/>Demo
+                <FaExternalLinkAlt className="mr-2" />
+                Demo
               </a>
             )}
           </div>
-
-
         </div>
-
-
       </section>
     </motion.div>
   );

@@ -7,7 +7,7 @@ import project2Img from "@/public/project2.jpg";
 import project3Img from "@/public/project3.jpg";
 import project4Img from "@/public/project4.jpg";
 import project5Img from "@/public/project5.png";
-
+import smartBinImg from "@/public/smartbin.png";
 export const links = [
   {
     name: "Home",
@@ -72,6 +72,15 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData = [
+  {
+    title: "SmartBin: AI-Powered Waste Classification System",
+    description:
+      "A full-stack web application that uses AI to classify waste in real-time",
+    tags: ["FastAPI", "PyTorch", "Next.js", "TypeScript", "Docker", "AWS"],
+    imageUrl: smartBinImg, // Replace with your image variable or path
+    source: "https://github.com/AlanY1an/SmartBin",
+    demo: "https://www.smrtbin.com/", // Replace with actual demo URL if available
+  },
   {
     title: "Spotify Lyrics Enhancer Chrome Extension",
     description:
