@@ -37,22 +37,6 @@ export default function About() {
       </p>
 
       <p className="mb-3">
-        I hold a{" "}
-        <span className="font-medium"> Bachelor’s in Applied Mathematics</span>
-        from the{" "}
-        <span className="font-medium"> University of Texas at Austin</span> and
-        am pursuing a{" "}
-        <span className="font-medium">
-          {" "}
-          Master’s in Software Engineering Systems
-        </span>
-        at <span className="font-medium"> Northeastern University</span>,
-        reflecting my
-        <span className="italic"> commitment to continuous learning</span> in
-        <span className="font-medium"> software engineering</span>.
-      </p>
-
-      <p className="mb-3">
         Outside of work, I enjoy playing the guitar, cycling, and traveling to
         experience new cultures and perspectives. These activities bring
         creativity and balance to my life, making my personal and professional
