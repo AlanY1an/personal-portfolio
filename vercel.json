@@ -5,7 +5,7 @@
       "headers": [
         {
           "key": "Content-Security-Policy",
-          "value": "frame-ancestors 'self' https://sandbox.optisigns.com https://qa-webplayer.optisigns.com http://localhost:61719 https://app.optisigns.com https://social-player.optisigns.com http://localhost:61790"
+          "value": "frame-ancestors 'self' https://sandbox.optisigns.com https://app.optisigns.com https://beta.optisigns.com https://qa.optisigns.com https://qa-webplayer.optisigns.com https://webplayer.optisigns.com https://social-player-beta.optisigns.com https://sandbox-webplayer.opstech.org https://social-player.optisigns.com http://localhost:61719 http://localhost:61790"
         }
       ]
     }
