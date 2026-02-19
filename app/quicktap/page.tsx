@@ -340,6 +340,9 @@ export default function QuickTapLanding() {
           <Link href="/quicktap/support" className="hover:text-gray-900 dark:hover:text-gray-200 transition">
             Support
           </Link>
+          <Link href="/quicktap/privacy" className="hover:text-gray-900 dark:hover:text-gray-200 transition">
+            Privacy Policy
+          </Link>
           <a href="mailto:yiange131@gmail.com" className="hover:text-gray-900 dark:hover:text-gray-200 transition">
             Contact
           </a>
