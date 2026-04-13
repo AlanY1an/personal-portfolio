@@ -1,13 +1,6 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import project1Img from "@/public/project1.jpg";
-import project2Img from "@/public/project2.jpg";
-import project3Img from "@/public/project3.jpg";
-import project4Img from "@/public/project4.jpg";
-import project5Img from "@/public/project5.png";
-import smartBinImg from "@/public/smartbin.png";
 export const links = [
   {
     name: "Home",
@@ -71,61 +64,9 @@ export const experiencesData = [
   },
 ] as const;
 
-export const projectsData = [
-  {
-    title: "SmartBin: AI-Powered Waste Classification System",
-    description:
-      "A full-stack web application that uses AI to classify waste in real-time",
-    tags: ["FastAPI", "PyTorch", "Next.js", "TypeScript", "Docker", "AWS"],
-    imageUrl: smartBinImg, // Replace with your image variable or path
-    source: "https://github.com/AlanY1an/SmartBin",
-    demo: "https://www.smrtbin.com/", // Replace with actual demo URL if available
-  },
-  {
-    title: "Spotify Lyrics Enhancer Chrome Extension",
-    description:
-      "A Chrome extension that integrates with the Genius API translates them into multiple languages",
-    tags: ["Chrome Extension", "Genius API", "JavaScript"],
-    imageUrl: project5Img, // Replace with your image variable
-    source: "https://github.com/AlanY1an/SpotifyTranslate",
-    demo: "https://github.com/AlanY1an/SpotifyTranslate",
-  },
-  {
-    title: "AgendaPro Desktop App",
-    description:
-      "A productivity desktop app built with JavaFX, showcasing task, event management, and utilities like timers.",
-    tags: ["JavaFX", "Scene Builder", "Java", "API"],
-    imageUrl: project4Img, // Replace with your image variable
-    source: "https://github.com/AlanY1an/AgendaPro", // Replace with the actual link if available
-    demo: "https://github.com/AlanY1an/AgendaPro", // Replace with the actual demo link if available
-  },
-  {
-    title: "Portfolio Template",
-    description: "A reusable and scalable portfolio template using Next.js",
-    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
-    imageUrl: project1Img, // Replace with your image variable
-    source: "https://github.com/AlanY1an/personal-portfolio", // Replace with the actual link if available
-    demo: "https://whyian.dev/", // Replace with the actual demo link if available
-  },
-  {
-    title: "Online Flower Shop",
-    description:
-      "A responsive SPA for an online flower shop built with React.js and Vite, focusing on performance optimization and accessibility.",
-    tags: ["React.js", "Vite", "HTML", "CSS", "JavaScript"],
-    imageUrl: project2Img, // Replace with your image variable
-    source: "https://github.com/AlanY1an/BloomGraceWeb", // Replace with the actual link if available
-    demo: "https://bloom-grace-web.vercel.app/", // Replace with the actual demo link if available
-  },
-  {
-    title: "Restaurant Management System",
-    description:
-      "A full-stack Django-based restaurant management system featuring table reservations, meal ordering, and an integrated blog.",
-    tags: ["Django", "Python", "SQLite", "PostgreSQL"],
-    imageUrl: project3Img, // Replace with your image variable
-    source: "https://github.com/AlanY1an/Restaurant-Manage-System", // Replace with the actual link if available
-    demo: "https://yian.pythonanywhere.com/", // Replace with the actual demo link if available
-  },
-] as const;
+// `projectsData` was removed. The project list is now fetched at build
+// time from the Astro blog's /api/projects.json endpoint via
+// `lib/get-projects.ts`. See components/projects.tsx.
 
 export const skillsData = [
   "Python",

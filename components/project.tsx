@@ -1,21 +1,19 @@
 "use client";
 
 import { useRef } from "react";
-import { projectsData } from "@/lib/data";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import { FaGithub, FaExternalLinkAlt, FaBookOpen } from "react-icons/fa";
+import type { BlogProject } from "@/lib/get-projects";
 
-type ProjectProps = (typeof projectsData)[number];
+interface ProjectProps {
+  project: BlogProject;
+}
 
-export default function Project({
-  title,
-  description,
-  tags,
-  imageUrl,
-  source,
-  demo,
-}: ProjectProps) {
+export default function Project({ project }: ProjectProps) {
+  const { title, description, tech, coverUrl, repoUrl, liveUrl, detailUrl } =
+    project;
+
   const ref = useRef<HTMLDivElement>(null);
 
   const { scrollYProgress } = useScroll({
@@ -36,13 +34,17 @@ export default function Project({
       className="group mb-3 sm:mb-8 last:mb-0"
     >
       <section className="bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[22rem] hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
-        <Image
-          src={imageUrl}
-          alt="Project I worked on"
-          quality={95}
-          className="block h-[20rem] object-cover object-top top-0 p-4 relative right-0 m-auto sm:p-0 sm:absolute sm:-right-40 sm:top-10 w-[28.25rem] rounded-t-lg shadow-2xl
-              transition 
-              
+        {coverUrl && (
+          <Image
+            src={coverUrl}
+            alt={title}
+            width={452}
+            height={320}
+            quality={95}
+            unoptimized
+            className="block h-[20rem] object-cover object-top top-0 p-4 relative right-0 m-auto sm:p-0 sm:absolute sm:-right-40 sm:top-10 w-[28.25rem] rounded-t-lg shadow-2xl
+              transition
+
               sm:group-hover:scale-[1.04]
               sm:group-hover:-translate-x-3
               sm:group-hover:translate-y-3
@@ -53,7 +55,8 @@ export default function Project({
               sm:group-even:group-hover:rotate-2
 
               sm:group-even:right-[initial] group-even:left-0 sm:group-even:-left-40"
-        />
+          />
+        )}
 
         <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem] ">
           <h3 className="text-2xl font-semibold text-center sm:text-start">
@@ -63,7 +66,7 @@ export default function Project({
             {description}
           </p>
           <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto justify-center sm:justify-start">
-            {tags.map((tag, index) => (
+            {tech.map((tag, index) => (
               <li
                 className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
                 key={index}
@@ -73,10 +76,10 @@ export default function Project({
             ))}
           </ul>
 
-          <div className="flex gap-4 mt-4 justify-around sm:mt-auto">
-            {source && (
+          <div className="flex flex-wrap gap-4 mt-4 justify-around sm:mt-auto">
+            {repoUrl && (
               <a
-                href={source}
+                href={repoUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center hover:underline font-medium whitespace-nowrap"
@@ -85,9 +88,9 @@ export default function Project({
                 Source
               </a>
             )}
-            {demo && (
+            {liveUrl && (
               <a
-                href={demo}
+                href={liveUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center hover:underline font-medium whitespace-nowrap"
@@ -96,6 +99,15 @@ export default function Project({
                 Demo
               </a>
             )}
+            <a
+              href={detailUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center hover:underline font-medium whitespace-nowrap"
+            >
+              <FaBookOpen className="mr-2" />
+              Case study
+            </a>
           </div>
         </div>
       </section>
