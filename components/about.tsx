@@ -19,7 +19,7 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        I&apos;m <span className="font-medium">Yian Ge</span>, a{" "}
+        I&apos;m <span className="font-medium">Alan (Yian) Ge</span>, a{" "}
         <span className="font-medium">software engineer</span> currently
         interning at{" "}
         <span className="font-medium">OptiSigns</span> in Houston, where I

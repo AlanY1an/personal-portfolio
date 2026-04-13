@@ -31,7 +31,7 @@ export default function Intro() {
           >
             <Image
               src="/profile-photo.jpeg"
-              alt="Yian Ge"
+              alt="Alan (Yian) Ge"
               width="192"
               height="192"
               quality="95"
@@ -61,9 +61,9 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        Hello, My name is <span className="font-bold">Yian.</span> I&apos;m a{" "}
-        <span className="font-bold">passionate</span> software engineer who
-        loves creating innovative{" "}
+        Hello, My name is <span className="font-bold">Alan (Yian).</span>{" "}
+        I&apos;m a <span className="font-bold">passionate</span> software
+        engineer who loves creating innovative{" "}
         <span className="italic">projects & apps</span> that make a difference
         in people&apos;s lives.
       </motion.h1>
