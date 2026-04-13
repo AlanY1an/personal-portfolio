@@ -1,12 +1,12 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
-import { FaGithubSquare, FaGlobe, FaSeedling } from "react-icons/fa";
+import { FaGithubSquare, FaSeedling } from "react-icons/fa";
 import useSectionInView from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 
@@ -61,11 +61,13 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        Hello, My name is <span className="font-bold">Yian.</span> I&apos;m a{" "}
-        <span className="font-bold">passionate</span> software engineer who
-        loves creating innovative{" "}
-        <span className="italic">projects & apps</span> that make a difference
-        in people&apos;s lives.
+        Hello, I&apos;m <span className="font-bold">Yian.</span> I&apos;m a{" "}
+        <span className="font-bold">software engineer</span> currently
+        interning at <span className="font-bold">OptiSigns</span> and
+        finishing an <span className="font-bold">MS at Northeastern</span>. I
+        build end-to-end things that feel like{" "}
+        <span className="italic">tools, not demos</span> — AI products,
+        full-stack web apps, and developer platforms.
       </motion.h1>
 
       <motion.div

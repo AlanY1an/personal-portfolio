@@ -3,7 +3,7 @@
 import { useRef } from "react";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { FaGithub, FaExternalLinkAlt, FaBookOpen } from "react-icons/fa";
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import type { BlogProject } from "@/lib/get-projects";
 
 interface ProjectProps {
@@ -34,6 +34,17 @@ export default function Project({ project }: ProjectProps) {
       className="group mb-3 sm:mb-8 last:mb-0"
     >
       <section className="bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[22rem] hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
+        {/* Stretched link covers the whole card → clicking anywhere
+            except the nested Source/Demo links opens the blog case
+            study. Source/Demo below use z-10 to sit above. */}
+        <a
+          href={detailUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={`${title} — read the full case study`}
+          className="absolute inset-0"
+        />
+
         {coverUrl && (
           <Image
             src={coverUrl}
@@ -76,39 +87,32 @@ export default function Project({ project }: ProjectProps) {
             ))}
           </ul>
 
-          <div className="flex flex-wrap gap-4 mt-4 justify-around sm:mt-auto">
-            {repoUrl && (
-              <a
-                href={repoUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center hover:underline font-medium whitespace-nowrap"
-              >
-                <FaGithub className="mr-2" />
-                Source
-              </a>
-            )}
-            {liveUrl && (
-              <a
-                href={liveUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center hover:underline font-medium whitespace-nowrap"
-              >
-                <FaExternalLinkAlt className="mr-2" />
-                Demo
-              </a>
-            )}
-            <a
-              href={detailUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center hover:underline font-medium whitespace-nowrap"
-            >
-              <FaBookOpen className="mr-2" />
-              Case study
-            </a>
-          </div>
+          {(repoUrl || liveUrl) && (
+            <div className="relative z-10 flex flex-wrap gap-4 mt-4 justify-around sm:mt-auto">
+              {repoUrl && (
+                <a
+                  href={repoUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center hover:underline font-medium whitespace-nowrap"
+                >
+                  <FaGithub className="mr-2" />
+                  Source
+                </a>
+              )}
+              {liveUrl && (
+                <a
+                  href={liveUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center hover:underline font-medium whitespace-nowrap"
+                >
+                  <FaExternalLinkAlt className="mr-2" />
+                  Demo
+                </a>
+              )}
+            </div>
+          )}
         </div>
       </section>
     </motion.div>
