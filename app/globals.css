@@ -14,3 +14,141 @@ html.dark {
 .borderBlack {
   @apply border border-black/10;
 }
+
+@keyframes gardenCtaPulse {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+    box-shadow:
+      0 8px 24px rgba(22, 101, 52, 0.12),
+      inset 0 1px 0 rgba(255, 255, 255, 0.45);
+  }
+  50% {
+    transform: translateY(-1px) scale(1.018);
+    box-shadow:
+      0 12px 30px rgba(22, 101, 52, 0.18),
+      inset 0 1px 0 rgba(255, 255, 255, 0.58);
+  }
+}
+
+@keyframes gardenCtaGlow {
+  0%,
+  100% {
+    opacity: 0.24;
+    transform: scale(0.96);
+  }
+  50% {
+    opacity: 0.42;
+    transform: scale(1.04);
+  }
+}
+
+@keyframes gardenCtaShine {
+  0%,
+  72%,
+  100% {
+    opacity: 0;
+    transform: translateX(0) skewX(-18deg);
+  }
+  78% {
+    opacity: 0.18;
+  }
+  88% {
+    opacity: 0.48;
+    transform: translateX(420%) skewX(-18deg);
+  }
+  92% {
+    opacity: 0;
+  }
+}
+
+.garden-cta {
+  animation: gardenCtaPulse 3.8s ease-in-out infinite;
+  transition:
+    transform 180ms cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 180ms cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 180ms ease,
+    filter 180ms ease;
+  will-change: transform, box-shadow;
+}
+
+.garden-cta__glow {
+  background:
+    radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.55), transparent 38%),
+    radial-gradient(circle at 78% 65%, rgba(16, 185, 129, 0.22), transparent 42%);
+  animation: gardenCtaGlow 3.8s ease-in-out infinite;
+  mix-blend-mode: screen;
+}
+
+.garden-cta__shine {
+  animation: gardenCtaShine 7.5s ease-in-out infinite;
+}
+
+.garden-cta__label {
+  transition:
+    transform 180ms cubic-bezier(0.22, 1, 0.36, 1),
+    letter-spacing 180ms ease,
+    color 180ms ease;
+  will-change: transform;
+}
+
+.garden-cta__arrow {
+  opacity: 0.45;
+  transform: translateX(-3px) scale(0.92);
+  transition:
+    transform 180ms cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 180ms ease;
+}
+
+.garden-cta__sprout {
+  opacity: 0;
+  background:
+    radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0) 62%),
+    radial-gradient(circle at 55% 45%, rgba(16, 185, 129, 0.42), rgba(16, 185, 129, 0) 72%);
+  transform: translateY(-50%) scale(0.4);
+  transition:
+    transform 170ms cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 140ms ease;
+  filter: blur(0.4px);
+}
+
+.garden-cta:hover,
+.group:hover .garden-cta {
+  animation-play-state: paused;
+  transform: translateY(-3px) scale(1.03);
+  border-color: rgba(20, 83, 45, 0.3);
+  box-shadow:
+    0 16px 36px rgba(22, 101, 52, 0.2),
+    0 0 0 1px rgba(255, 255, 255, 0.22) inset;
+  filter: saturate(1.06) brightness(1.02);
+}
+
+.garden-cta:hover .garden-cta__glow,
+.group:hover .garden-cta__glow,
+.garden-cta:hover .garden-cta__shine,
+.group:hover .garden-cta__shine {
+  animation-play-state: paused;
+}
+
+.garden-cta:hover .garden-cta__glow,
+.group:hover .garden-cta__glow {
+  opacity: 0.54;
+  transform: scale(1.06);
+}
+
+.garden-cta:hover .garden-cta__label,
+.group:hover .garden-cta__label {
+  transform: translateX(2px);
+}
+
+.garden-cta:hover .garden-cta__arrow,
+.group:hover .garden-cta__arrow {
+  opacity: 0.82;
+  transform: translateX(0) scale(1);
+}
+
+.garden-cta:hover .garden-cta__sprout,
+.group:hover .garden-cta__sprout {
+  opacity: 0.95;
+  transform: translateY(-50%) scale(1);
+}

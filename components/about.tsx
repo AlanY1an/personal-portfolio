@@ -21,36 +21,28 @@ export default function About() {
       <p className="mb-3">
         I&apos;m <span className="font-medium">Alan (Yian) Ge</span>, a{" "}
         <span className="font-medium">software engineer</span> currently
-        interning at{" "}
-        <span className="font-medium">OptiSigns</span> in Houston, where I
+        interning at <span className="font-medium">OptiSigns</span>, where I
         ship production features for{" "}
-        <span className="italic">100+ enterprise clients</span> — Power BI
-        integrations, backend migrations, and developer tooling that makes the
-        rest of the team faster. I hold a BS in Applied Mathematics from{" "}
-        <span className="font-medium">UT Austin</span> and am completing an MS
-        in Software Engineering Systems at{" "}
-        <span className="font-medium">Northeastern</span>, both with 3.9+ GPAs.
+        <span className="italic">100+ enterprise clients</span>. I studied{" "}
+        <span className="font-medium">Applied Mathematics at UT Austin</span>{" "}
+        and I&apos;m finishing an{" "}
+        <span className="font-medium">
+          MS in Software Engineering Systems at Northeastern
+        </span>
+        .
       </p>
 
       <p className="mb-3">
-        I like building end-to-end things that feel like tools, not demos. My
-        recent work spans{" "}
+        I build{" "}
         <span className="font-medium">
-          AI products, full-stack web apps, and developer platforms
+          AI products, full-stack apps, and developer tools
         </span>{" "}
-        — from a LangGraph-powered travel planner to an AI room re-designer
-        with per-furniture editing, a context-aware RAG trading copilot, and a
-        template-driven LaTeX editor. I&apos;m fluent in{" "}
+        with{" "}
         <span className="font-medium">
           React, Next.js, TypeScript, Python, Tailwind, and FastAPI
         </span>
-        , and I care about what the code feels like to use as much as what it
-        does.
-      </p>
-
-      <p className="mb-3">
-        Outside of work I play guitar, take photos on a Nikon Z6 II, and try
-        to visit somewhere new whenever I can. I write{" "}
+        . I care about building tools that feel polished, useful, and easy to
+        use. I also write{" "}
         <a
           href="https://alanyian.com"
           target="_blank"
