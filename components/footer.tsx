@@ -30,7 +30,7 @@ export default function Footer() {
       </p>
       {visits !== null && (
         <p className="mt-2 text-xs text-gray-400 tabular-nums">
-          👁 {visits.toLocaleString()} visits
+          {visits.toLocaleString()} humans said hi
         </p>
       )}
     </footer>
