@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -154,6 +154,7 @@ export default function Intro() {
   const plantRef = useRef<PlantDrawerHandle>(null);
   const decorRefs = useRef<(SVGPathElement | null)[]>([]);
   const budRefs = useRef<(SVGGElement | null)[]>([]);
+  const [isAvatarHovered, setIsAvatarHovered] = useState(false);
 
   // Sway each decor leaf on a sine wave by writing the SVG transform
   // attribute directly. This bypasses every CSS transform / fill-box /
@@ -256,13 +257,22 @@ export default function Intro() {
       className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[50rem]"
     >
       <div className="flex items-center justify-center">
-        <div className="relative">
+        <div
+          className="relative"
+          onMouseEnter={() => setIsAvatarHovered(true)}
+          onMouseLeave={() => setIsAvatarHovered(false)}
+        >
           <motion.div
             initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: 1, scale: 1 }}
+            animate={{
+              opacity: 1,
+              scale: 1,
+              rotate: isAvatarHovered ? 7 : 0,
+            }}
             transition={{
-              type: "spring",
-              duration: 0.4,
+              opacity: { type: "spring", duration: 0.4 },
+              scale: { type: "spring", duration: 0.4 },
+              rotate: { type: "spring", stiffness: 260, damping: 10 },
             }}
           >
             <Image
@@ -277,8 +287,12 @@ export default function Intro() {
           </motion.div>
           <motion.span
             className="text-4xl absolute bottom-0 right-0"
-            initial={{ opacity: 0, scale: 0, rotate: -180 }} // rotate angle
-            animate={{ opacity: 1, scale: 1, rotate: 0 }} // end rotate angle
+            initial={{ opacity: 0, scale: 0, rotate: -180 }}
+            animate={{
+              opacity: isAvatarHovered ? 0 : 1,
+              scale: isAvatarHovered ? 0.4 : 1,
+              rotate: 0,
+            }}
             transition={{
               type: "spring",
               bounce: 1,
@@ -288,6 +302,21 @@ export default function Intro() {
             }}
           >
             👋
+          </motion.span>
+          <motion.span
+            className="text-4xl absolute bottom-0 right-0"
+            initial={{ opacity: 0, scale: 0.4 }}
+            animate={{
+              opacity: isAvatarHovered ? 1 : 0,
+              scale: isAvatarHovered ? 1 : 0.4,
+            }}
+            transition={{
+              type: "spring",
+              stiffness: 260,
+              damping: 16,
+            }}
+          >
+            🐾
           </motion.span>
         </div>
       </div>
