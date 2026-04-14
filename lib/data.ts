@@ -54,6 +54,15 @@ export const experiencesData = [
     date: "Sep 2024 – Expected May 2026",
   },
   {
+    title:
+      "Graduate Research Assistant at Global Resilience Institute, Northeastern University",
+    location: "Boston, MA",
+    description:
+      "Conduct research for the Defense Industrial Base Initiative (DIBI) on U.S. defense manufacturing, supply chains, and workforce readiness. Assist with case studies, stakeholder engagement, and policy analysis to enhance industrial resilience.",
+    icon: React.createElement(CgWorkAlt),
+    date: "Dec 2024 – Present",
+  },
+  {
     title: "Software Engineer Intern at OptiSigns Inc.",
     location: "Houston, TX (On-site)",
     description:
