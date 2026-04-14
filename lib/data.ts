@@ -76,27 +76,61 @@ export const experiencesData = [
 // time from the Astro blog's /api/projects.json endpoint via
 // `lib/get-projects.ts`. See components/projects.tsx.
 
+// Ordered so the AI / LLM work shows up first — those are the
+// technologies behind the recent project work (VoyageAI, Elder Trading
+// Copilot, Roomet, SmartBin), and the stagger animation reveals them
+// in order from left to right.
 export const skillsData = [
+  // AI / ML / LLM
+  "LangGraph",
+  "LangChain",
+  "OpenAI",
+  "Gemini",
+  "PyTorch",
+  "Hugging Face",
+  "FAISS",
+  "RAG",
+  "YOLO",
+  "Streamlit",
+
+  // Web frontend
+  "React",
+  "Next.js",
+  "TypeScript",
+  "Tailwind CSS",
+  "Astro",
+  "Vite",
+  "Framer Motion",
+
+  // Backend
+  "FastAPI",
   "Python",
+  "Node.js",
+  "Express",
+  "Django",
+
+  // Data / databases
+  "PostgreSQL",
+  "Supabase",
+  "Redis",
+  "SQL",
+  "MySQL",
+
+  // DevOps / tooling
+  "Docker",
+  "AWS",
+  "CI/CD",
+  "Git",
+  "Linux",
+  "Postman",
+
+  // Other languages
+  "JavaScript",
   "Java",
+  "Swift",
   "C++",
   "HTML",
   "CSS",
-  "JavaScript",
-  "React",
-  "Next.js",
-  "Node.js",
-  "Spring Boot",
-  "Django",
-  "POSTMAN",
-  "SQL",
-  "MATLAB",
-  "R",
-  "MySQL",
-  "Git",
-  "Linux",
-  "BeautifulSoup",
-  "Requests",
   "JavaFX",
-  "LATEX",
+  "LaTeX",
 ] as const;
