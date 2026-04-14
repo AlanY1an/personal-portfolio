@@ -115,30 +115,24 @@ export default function Intro() {
       </motion.div>
 
       <motion.div
-        className="flex flex-col sm:flex-row items-center justify-center gap-3 px-4 text-lg"
+        className="flex items-center justify-center mt-4 px-4 text-lg"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
-          delay: 0.1,
+          delay: 0.15,
         }}
       >
-        <div className="relative p-4 group hover:scale-110 transition-all duration-300">
-          <div className="absolute inset-4 bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 rounded-full blur-xl opacity-60"></div>
-          <a
-            className="relative bg-gradient-to-r p-[2px] rounded-full"
-            href="https://alanyian.com"
-            target="_blank"
-          >
-            <div className="relative bg-white dark:bg-gray-900 rounded-full px-6 py-3 flex flex-col items-center gap-1 transition-all duration-300 group-hover:bg-opacity-90">
-              <div className="flex items-center gap-2">
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 font-medium text-lg">
-                  My Digital Garden
-                </span>
-                <FaSeedling className="text-green-600 group-hover:rotate-12 transition-all duration-300" />
-              </div>
-            </div>
-          </a>
-        </div>
+        <a
+          href="https://alanyian.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group inline-flex items-center gap-2 rounded-full bg-white px-7 py-3 font-medium borderBlack transition hover:scale-110 hover:shadow-lg focus:scale-110 active:scale-105 dark:bg-white/10"
+        >
+          <FaSeedling className="text-green-600 transition-transform duration-300 group-hover:rotate-12" />
+          <span className="bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 bg-clip-text text-transparent">
+            My Digital Garden
+          </span>
+        </a>
       </motion.div>
     </section>
   );
