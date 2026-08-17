@@ -20,12 +20,13 @@ export default function About() {
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
         I&apos;m <span className="font-medium">Alan (Yian) Ge</span>, a{" "}
-        <span className="font-medium">software engineer</span> currently
-        interning at <span className="font-medium">OptiSigns</span>, where I
-        ship production features for{" "}
-        <span className="italic">100+ enterprise clients</span>. I studied{" "}
+        <span className="font-medium">software engineer</span> at{" "}
+        <span className="font-medium">OptiSigns</span>, where I
+        work across the React portal, the GraphQL backend, device agents and
+        embedded Linux firmware on a platform managing{" "}
+        <span className="italic">200,000+ screens</span>. I studied{" "}
         <span className="font-medium">Applied Mathematics at UT Austin</span>{" "}
-        and I&apos;m finishing an{" "}
+        and hold an{" "}
         <span className="font-medium">
           MS in Software Engineering Systems at Northeastern
         </span>

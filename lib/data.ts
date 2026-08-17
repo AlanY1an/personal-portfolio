@@ -30,12 +30,13 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Software Engineer Intern at OptiSigns Inc.",
+    title: "Software Engineer at OptiSigns Inc. (intern through May 2026)",
     location: "Houston, TX (On-site)",
     bullets: [
-      "Shipped a Power BI SDK integration (React / TypeScript + Express) with advanced filtering, serving 100+ enterprise clients.",
-      "Redesigned and migrated the Clock smallapp (3,000+ users) with a new backend and database architecture, plus migration scripts, to unblock customizable UI/UX templates.",
-      "Authored developer docs and introduced AI-assisted coding workflows that sped up onboarding and automated repetitive tasks.",
+      "Co-authored the internal tooling AI coding agents use across the company's ~40 repositories, including cross-repo context loaders and a reusable skill library with a meta-skill for onboarding any third-party API; designed a three-session agent workflow (plan / code / verify) where the verifier cannot edit what it checks; measured where agent time actually goes, and the findings were adopted as engineering practice.",
+      "Integrated the product across 21 device platforms (Samsung Tizen, LG webOS, Amazon Fire TV, TCL, Roku, ChromeOS, Android, embedded Linux), each with its own SDK, signing chain and capability limits, and took 4 of them from vendor SDK to full portal integration.",
+      "Shipped device management for a fleet of 200,000+ screens across a React/TypeScript portal, a NestJS/GraphQL backend, device agents and embedded Linux firmware, replacing three hand-maintained lists of what each device model supports, which had drifted apart, with one generated from what the hardware actually reports and guarded by a CI check.",
+      "Built the on-device operating-system interface customers see on the screen, from first-boot setup through diagnostics, fully operable from a phone for a display that has no keyboard, shipping enabled in the default product image.",
     ],
     icon: React.createElement(CgWorkAlt),
     date: "Jun 2025 – Present",
@@ -45,22 +46,21 @@ export const experiencesData = [
       "Graduate Research Assistant at Global Resilience Institute, Northeastern University",
     location: "Boston, MA",
     bullets: [
-      "Conduct research for the Defense Industrial Base Initiative (DIBI) on U.S. defense manufacturing, supply chains, and workforce readiness.",
-      "Assist with case studies, stakeholder engagement, and policy analysis to enhance industrial resilience.",
+      "Assembled a 67-source evidence base on manufacturing capacity and supply-chain resilience, and wrote the resulting reports.",
+      "Handled content updates and upkeep for the institute's website.",
     ],
     icon: React.createElement(CgWorkAlt),
-    date: "Dec 2024 – Present",
+    date: "Dec 2024 – May 2025",
   },
   {
     title: "M.S. in Software Engineering Systems",
     location: "Northeastern University, Boston, MA",
     bullets: [
-      "Currently pursuing the MS with a 4.0 GPA.",
-      "Coursework: Web Design, UI/UX, Data Structures and Algorithms.",
-      "Expected graduation May 2026.",
+      "Completed the MS in Software Engineering Systems, graduating May 2026.",
+      "Coursework: Program Structure & Algorithms, Theory & Practical Applications of AI Generative Models, Prompt Engineering for Generative AI, Operating Systems, Object-Oriented Design, UX Design & Testing.",
     ],
     icon: React.createElement(LuGraduationCap),
-    date: "Sep 2024 – Expected May 2026",
+    date: "Sep 2024 – May 2026",
   },
   {
     title: "Website Developer Intern at BeTogether Hub",
